@@ -1,0 +1,63 @@
+/* Filename:        h1_var_format_mTaylor.cpp
+    Author:         Max Taylor
+    Date:           1/11/19
+    Description:    Program that uses variables to hold values & iomanip functions to format output.
+    Objective:      Demonstrate declaration, assignment and output of an integer, string, character and float.
+                    Output data values in a nicely formatted table.
+ 
+    Specifications: Write a program that declares the following variables and initializes those with the
+                    corresponding value. Be sure to choose an appropriate data type for the values.
+*/
+
+#include <iostream> // cout
+#include <iomanip> // fixed, showpoint, setw, setprecision
+#include <string>  //string data type
+using namespace std;
+
+int main(){
+    
+    //Declaring the Variables
+        //Authors
+    string author1;
+    string author2;
+    string author3;
+        //Titles
+    string title1;
+    string title2;
+    string title3;
+        //Years
+    int year1;
+    int year2;
+    int year3;
+    
+    
+    
+    
+    //Initialize Variables
+        //Authors
+    author1="Eisley";
+    author2="Gilbert";
+    author3="Paton";
+        //Titles
+    title1="All The Strange Hours";
+    title2="Big Magic";
+    title3="Too Late The Phalarope";
+        //Years
+    year1=1975;
+    year2=2017;
+    year3=1996;
+    
+    
+    
+    
+    //Output Variables
+        //Form: cout << author1 << setw(10) << title1 << setw(10) << year1 << endl;
+    cout << author1 << setw(28) << title1 << setw(16) << year1 << endl;
+    cout << author2 << setw(15) << title2 << setw(28) << year2 << endl;
+    cout << author3 << setw(30) << title3 << setw(15) << year3 << endl;
+
+
+
+    return 0;
+    
+}
